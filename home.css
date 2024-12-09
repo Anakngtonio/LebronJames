@@ -1,0 +1,563 @@
+*
+{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+section
+{
+    padding: 1% 5%;
+}
+h1
+{
+	font-size: 40px;
+}
+h2{
+    font-size: 25px;;
+}
+h4
+{
+	font-size: 12px;
+}
+
+h3
+{
+    font-size: 18px;
+}
+p
+{
+	font-size: 16px;
+}
+body,main
+{
+	position: relative;
+}
+.footer
+{
+	position: relative;
+	background-color: #121212;
+	overflow: hidden;
+}
+@keyframes foooterAnimation
+{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+		
+}
+.footer::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 3px;
+	background: linear-gradient(90deg,blue,red,green,blue);
+	z-index: 100;
+	animation: lineAnimation 10s infinite;
+}
+@keyframes lineAnimation
+{
+	0%
+	{
+		transform: translateX(0%);
+	}
+	50%
+	{
+		transform: translateX(-50%);
+	}
+	100%
+	{
+		transform: translateX(0%);
+	}
+}
+.footer-title
+{
+	color: #d6d6d6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid 1px #616161;
+	padding-bottom: 1%;
+}
+.footer-links-container
+{
+	display: flex;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	justify-content: space-around;
+
+}
+.footer-logo
+{
+	width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img
+{
+	transition: 0.3s ease;
+    width: 80%;
+    opacity: 0.8;
+}
+.footer-logo img:hover
+{
+	transform: scale(1.1);
+	
+}
+.footer-links
+{
+	color: #d6d6d6;
+	display: flex;
+	flex-direction: column;
+
+	
+}
+
+.footer-links a
+{
+	text-decoration: none;
+	color: #d6d6d6;
+	transition: 0.3s ease;
+			opacity: 0.6;
+}
+.footer-links a:hover
+{
+	opacity: 1;
+	transform: scale(1.1);
+}
+.footer-bottom-links
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3%;
+	color: #d6d6d6;
+	border-bottom: solid 1px #616161;
+	border-top: solid 1px #616161;
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+}
+.footer-bottom-links a
+{
+	text-decoration: none;
+	color: #d6d6d6;
+	transition: 0.3s ease;
+	opacity: 0.6;
+}
+.footer-bottom-links h3
+{
+	text-decoration: none;
+	color: #d6d6d6;
+	opacity: 0.6;
+}
+.footer-bottom-links a:hover
+{
+	opacity: 1;
+	transform: scale(1.1);
+}
+.footer-copyright
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #616161;
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+}
+
+header
+{
+    padding: 1% 3%;
+	position:relative;
+	width: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+    /* background-color: #696969; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    /* border: solid 1px black; */
+}
+.logo h2
+{
+    font-style: bold;
+    font-weight: 800;
+    color: #121212;
+}
+.logo img
+{
+	width: 10%;
+	transition: 0.3s ease;
+    /* margin-bottom: 1vh; */
+}
+.logo img:hover
+{
+	transform: scale(1.1);
+}
+.links
+{
+	display: flex;
+	gap: 4vh;
+	justify-content: center;
+	align-items: center;
+}
+.links a
+{
+	text-decoration: none;
+	color: #121212;
+	font-size: 16px;
+	transition: 0.3s ease;
+}
+.links a:hover
+{
+	transform: scale(1.1);
+	border-bottom: 2px solid #b91f1f;
+	color:  #b91f1f;
+}
+.color-picker
+{
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    z-index: 1000;
+}
+.first-section
+{
+    position: relative;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090909;
+    padding: 0%
+
+}
+.first-section::before
+{
+    position: absolute;
+    content: "";
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #090909 ,transparent, transparent, transparent,  transparent 80%),
+                linear-gradient(to right, #090909 , transparent,transparent);
+}
+.banner-background
+{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+
+.banner-background img
+{
+    width: 100%;
+    opacity: 0.6;
+}
+.bannerlogo
+{
+    display: flex;
+    width: 50%;
+    z-index: 3;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    animation: scaleAnimation 5s ease infinite;
+    position: relative;
+
+}
+.break-scoring-record
+{
+    height: 50vh;
+}
+.lebron-jumping
+{
+    z-index: 5;
+}
+.bannerlogo .lebron-jumping img
+{
+    width: 65%;
+
+}
+.firstdiv-links
+{
+	display: flex;
+	gap: 3vh;
+	
+}
+@keyframes scaleAnimation
+{
+    0%
+    {
+        transform: scale(1) ;
+    }
+    50%
+    {
+        transform: scale(1.08) rotate(2deg);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.lebron-fire
+{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    left: 26%;
+}
+.bannerlogo .lebron-fire img
+{
+    width: 30%;
+    filter: brightness(0.8);
+    transform: rotate(30deg);
+
+}
+.banner-text
+{
+    margin-left: 5%;
+    display: flex;
+    padding-top: 7%;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 3;
+    width:50%;
+    height: 100%;
+    padding-right: 5%;
+    /* border: solid 1px red; */
+}
+.banner-text h1
+{
+    color: #D72323;
+}
+.banner-text h2
+{
+    color: #dedede;
+}
+.banner-text p
+{
+    font-size: 16px;
+    text-decoration: none;
+    font-style: bold;
+    color: #dedede;
+}
+.banner-text a
+{
+    padding: 1.5%;
+    text-decoration: none;
+    color: #dedede;
+    font-size: 16px;
+    background: #770b0b;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px #dedede;
+}
+.break-scoring-record
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vh;
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+.break-scoring-record h2
+{
+    color: #b91f1f;
+}
+.scoring-img
+{
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 45vh;
+    justify-content: center;
+}
+.scoring-img img
+{
+    position:relative;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+/* .scoring-img img::before
+{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 2px double #c0bfbf;
+    z-index: 3;
+} */
+.scoring-img img:hover
+{
+    transform: scale(0.95);
+}
+.scoring-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+.row-reverse
+{
+    flex-direction: row-reverse;
+}
+.fourthdiv
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+    /* background: linear-gradient(to top, #121212 ,transparent 50%, transparent 100%); */
+
+    /* margin-bottom: 1vh; */
+	/* background-color: #001642; */
+	/* background: #121212; */
+}
+
+
+.for-bg
+{
+    background: linear-gradient(to top, #000000, transparent)#121212;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+.fourthdiv-container
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	pointer-events:none;
+	gap:5vh;
+	transform-style: preserve-3d;
+    
+}
+.fourthdiv-container-img
+{
+	height: 100%;
+	background-color: white;
+	border-radius: 10px;
+	transition: 0.5s ease;
+	background: #121212;
+	background-color: #143c99;
+	pointer-events:auto;
+    height: 40vh;
+	aspect-ratio: 1/1.4;
+	-webkit-box-reflect: below 1% linear-gradient(transparent 80%,rgba(0,0,0, 0.4)100%);
+    overflow: hidden;
+}
+.fourthdiv-container-img img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.fourthdiv-container-img:hover
+{
+	transform: scale(1.1);
+}
+.fourthdiv-container:hover > :not(:hover)
+{
+	transform: perspective(500px)rotateY(15deg)scale(0.9);
+	opacity: 0.5;
+
+}
+.fourthdiv-container-img:hover ~ .fourthdiv-container-img
+{
+	transform: perspective(500px)rotateY(-15deg)scale(0.9);
+		opacity: 0.5;
+}
+.lebron-mvp
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    border-bottom: solid 2px #c0bfbf;
+    padding-bottom: 0.5%;
+}
+.lebron-mvp h2
+{
+    color: #dedede;
+}
+
+.sponsors
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2%;
+    gap: 2vh;
+}
+.sponsors-title
+{
+	border-bottom: solid 2px #c0bfbf;
+	text-align: center;
+	width: 60%;
+	color: #121212;
+}
+
+.sponsors-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    gap: 2vh;
+	/* border: solid 1px black; */
+	width: 60%;
+}
+.sponsor-cards
+{
+	background-color: white;
+	border-radius: 10px;
+	transition: 0.5s ease;
+
+	pointer-events:auto;
+    height: 15vh;
+    
+}
+.sponsor-cards img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.sponsors-container img:hover
+{
+	transform: scale(1.1);
+}
